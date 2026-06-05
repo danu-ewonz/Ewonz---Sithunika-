@@ -2,34 +2,96 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Danu & Sadali Wedding</title>
-<link rel="stylesheet" href="style.css">
+<title>Wedding Invitation</title>
+
+<style>
+body{
+  margin:0;
+  background:#0b0b0b;
+  color:#fff;
+  font-family: Georgia, serif;
+}
+
+/* Names Circle */
+.names-circle{
+  width: 320px;
+  height: 320px;
+  border: 3px solid gold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.names-circle h1{
+  font-size: 26px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+/* Tagline */
+.tagline{
+  text-align:center;
+  font-size:16px;
+  margin-top:10px;
+  color:#ddd;
+}
+
+/* Details Box */
+.details{
+  width:80%;
+  max-width:500px;
+  margin:30px auto;
+  padding:20px;
+  border:1px solid gold;
+  border-radius:10px;
+  text-align:center;
+}
+
+.details h2{
+  color:gold;
+  margin-bottom:10px;
+}
+
+.details p{
+  margin:6px 0;
+  color:#eee;
+}
+
+/* Footer line */
+.footer{
+  text-align:center;
+  margin-top:30px;
+  font-style:italic;
+  color:#ccc;
+}
+</style>
+
 </head>
 
 <body>
 
-<div id="openScreen">
-    <h2>Welcome to Our Wedding Invitation</h2>
-    <button onclick="openSite()">Open</button>
+<div class="names-circle">
+  <h1>Danu Ewonz &<br>Sadali Sithunika</h1>
 </div>
 
-<div id="main">
-    <h1>Danu Ewonz ❤️ Sadali Sithunika</h1>
-
-    <div class="location">
-        📍 Grace Place, Piliyandala, Colombo, Sri Lanka
-    </div>
-
-    <h3>Wedding Countdown</h3>
-
-    <div class="countdown">
-        <div class="box"><span id="days">0</span><br>Days</div>
-        <div class="box"><span id="hours">0</span><br>Hours</div>
-        <div class="box"><span id="minutes">0</span><br>Minutes</div>
-        <div class="box"><span id="seconds">0</span><br>Seconds</div>
-    </div>
+<div class="tagline">
+  Together with their families
 </div>
 
-<script src="script.js"></script>
+<div class="details">
+  <h2>Wedding Invitation</h2>
+  <p><b>Location:</b> Grace Place (Wedding Hall)</p>
+  <p><b>Address:</b> Colombo, Sri Lanka - Piliyandala</p>
+  <p><b>Time:</b> 6.00 PM</p>
+</div>
+
+<div class="footer">
+  We warmly invite you to celebrate our special day ❤️
+</div>
+
 </body>
 </html>
